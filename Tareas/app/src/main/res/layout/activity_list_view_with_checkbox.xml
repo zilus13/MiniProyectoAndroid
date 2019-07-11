@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListViewWithCheckboxActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ListView
+        android:id="@+id/list_view_with_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="159dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/editText6"
+            android:layout_toRightOf="@+id/editText6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Titulo"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginRight="145dp"
+            android:layout_toEndOf="@+id/editText6"
+            android:layout_toRightOf="@+id/editText6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="fecha"
+            tools:text="@tools:sample/date/hhmmss" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Hora" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Nueva tarea" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/list_select_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select All" />
+
+    <Button
+        android:id="@+id/list_select_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="Select None" />
+
+    <Button
+        android:id="@+id/list_select_reverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse Select" />
+
+
+    <Button
+        android:id="@+id/list_remove_selected_rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Selected Rows" />
+
+</LinearLayout>
